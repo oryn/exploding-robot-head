@@ -1,3 +1,4 @@
+
 html {
   box-sizing: border-box;
 
@@ -15,21 +16,39 @@ body {
 
 .banner {
   background-color: #2b3851;
+  width: 100%;
+  height: 230px;
 }
 
 .robot {
   width: 320px;
+  position: relative;
+  display: block;
+  margin: auto;
+  padding-top: 45px;
 }
 
 .robot-body {
   width: 320px;
+  position: absolute;
 }
 
 .robot-brain {
   width: 46px;
+  position: absolute;
+  left: 136px;
+  top: 100%;
+  transition: all 1000ms linear;
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
+}
+
+.robot-head-left {
+  position: absolute;
+  right: 50%;
+  top: 0;
+  transition: all 1000ms linear;
 }
